@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        38번 페이지
+    </title>
+</head>
+<script>
+    window.onload = function() {
+        for (let i = 1; i <= 9; i++) {
+            let row = document.createElement('tr');
+            for (let j = 1; j <= 9; j++) {
+                let cell = document.createElement('td');
+                cell.textContent = `${j} * ${i} = ${j * i}`;
+                row.appendChild(cell);
+            }
+            document.querySelector('tbody').appendChild(row);
+        }
+    };
+</script>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>1단</th>
+                <th>2단</th>
+                <th>3단</th>
+                <th>4단</th>
+                <th>5단</th>
+                <th>6단</th>
+                <th>7단</th>
+                <th>8단</th>
+                <th>9단</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+           </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
