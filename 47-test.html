@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>47번 페이지</title>
+<script>
+var fruits = [
+    {name: 'apple', price: 1000, number: 10},
+    {name: 'banana', price: 2000, number: 5},
+    {name: 'cherry', price: 3000, number: 7},
+    
+];
+
+var total = 0;
+
+function calcPrice(price, number) {
+    return price * number;
+}
+
+window.onload = function() {
+    for(var i = 0; i < fruits.length; i++) {
+        var fruit = fruits[i];
+        var fruitTotal = calcPrice(fruit.price, fruit.number);
+        total += fruitTotal;
+        document.body.innerHTML += '<p>' + fruit.name + '의 구매 가격: ' + fruitTotal + '</p>';
+    }
+    document.body.innerHTML += '<p>총 구매 가격: ' + total + '</p>';
+}
+</script>
+</head>
+<body>
+</body>
+</html>
